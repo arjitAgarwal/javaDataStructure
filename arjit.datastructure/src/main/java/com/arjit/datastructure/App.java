@@ -7,7 +7,7 @@ import java.util.Random;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import com.arjit.datastructure.model.WrapperObject;
-import com.arjit.datastructure.sorting.BubbleSort;
+import com.arjit.datastructure.sorting.InsertionSort;
 import com.arjit.datastructure.utils.WrapperObjectUtil;
 
 public class App {
@@ -25,7 +25,7 @@ public class App {
     	
     	WrapperObjectUtil.displayObject(objectList);
     	
-    	BubbleSort bubbleSort = new BubbleSort(objectList);
+    	InsertionSort bubbleSort = new InsertionSort(objectList);
     	bubbleSort.sort();
     	
     	objectList = new ArrayList<WrapperObject>();
@@ -35,7 +35,7 @@ public class App {
     	
     	WrapperObjectUtil.displayObject(objectList);
     	
-    	bubbleSort = new BubbleSort(objectList);
+    	bubbleSort = new InsertionSort(objectList);
     	bubbleSort.sort();
     	
     }

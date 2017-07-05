@@ -50,4 +50,34 @@ public class WrapperObjectUtil {
 		System.out.println("\n-------------------------\n");
 	}
 
+	public static boolean compareobject(Object object1, Object object2) {
+		if (object1 instanceof Long && object2 instanceof Long) {
+			Long firstNumber = Long.parseLong(object1.toString());
+			Long secondNumber = Long.parseLong(object2.toString());
+			if (firstNumber > secondNumber) {
+				return true;
+			}
+		} else if (object1 instanceof Double && object2 instanceof Double) {
+			Double firstNumber = Double.parseDouble(object1.toString());
+			Double secondNumber = Double.parseDouble(object2.toString());
+			if (firstNumber > secondNumber) {
+				return true;
+			}
+		} else if (object1 instanceof Integer && object2 instanceof Integer) {
+			Integer firstNumber = Integer.parseInt(object1.toString());
+			Integer secondNumber = Integer.parseInt(object2.toString());
+			if (firstNumber > secondNumber) {
+				return true;
+			}
+		} else if (object1 instanceof String && object2 instanceof String) {
+			String first = object1.toString();
+			String second = object2.toString();
+			if (first.compareTo(second) > 0) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
+
 }
