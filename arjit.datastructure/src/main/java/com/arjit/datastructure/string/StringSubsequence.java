@@ -14,7 +14,6 @@ public class StringSubsequence {
 		char ch[] = input.toCharArray();
 		int start, end;
 		for(int i = 0; i < ch.length; i++) {
-			if (StringUtils.checkVowel(ch[i])
 		}
 	}
 	

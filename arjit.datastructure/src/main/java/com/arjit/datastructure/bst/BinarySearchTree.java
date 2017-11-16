@@ -1,5 +1,6 @@
-package com.arjit.datastructure.model;
+package com.arjit.datastructure.bst;
 
+import com.arjit.datastructure.model.WrapperObject;
 import com.arjit.datastructure.utils.WrapperObjectUtil;
 
 public class BinarySearchTree {

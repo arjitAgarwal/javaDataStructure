@@ -6,7 +6,6 @@ import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
-import com.arjit.datastructure.model.BinarySearchTree;
 import com.arjit.datastructure.model.WrapperObject;
 import com.arjit.datastructure.utils.WrapperObjectUtil;
 
