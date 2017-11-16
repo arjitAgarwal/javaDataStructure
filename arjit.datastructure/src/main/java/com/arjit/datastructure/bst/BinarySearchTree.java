@@ -1,21 +1,10 @@
 package com.arjit.datastructure.bst;
 
+import com.arjit.datastructure.model.Node;
 import com.arjit.datastructure.model.WrapperObject;
 import com.arjit.datastructure.utils.WrapperObjectUtil;
 
 public class BinarySearchTree {
-
-	public class Node {
-		public WrapperObject wrapperObject;
-		public Node left;
-		public Node right;
-		
-		public Node(Object object) {
-			this.wrapperObject = new WrapperObject(object);
-			this.left = this.right = null;
-		}
-	}
-	
 	public Node root = null;
 	
 	public void printInOrder(Node root) {
